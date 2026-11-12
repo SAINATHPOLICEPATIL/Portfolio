@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sainath Patil — Software Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Sainath Patil, aspiring Software Developer specializing in Java, Python, SQL, Spring Boot, MySQL, and modern software development."
+    />
+    <meta name="author" content="Sainath Patil" />
+    <meta name="keywords" content="Sainath Patil, Software Developer, Java, Python, SQL, Spring Boot, MySQL, Machine Learning, Bengaluru, SJB Institute of Technology" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sainath Patil — Software Developer" />
+    <meta
+      property="og:description"
+      content="Explore projects, technical skills, and background of Sainath Patil. Information Science and Engineering graduate passionate about problem-solving and modern software development."
+    />
+    <meta property="og:site_name" content="Sainath Patil Portfolio" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sainath Patil — Software Developer" />
+    <meta
+      name="twitter:description"
+      content="Explore projects, technical skills, and background of Sainath Patil. Information Science and Engineering graduate passionate about problem-solving and modern software development."
+    />
+
+    <!-- Theme initialization to prevent flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('portfolio-theme');
+          var theme = saved;
+          if (!theme || (theme !== 'dark' && theme !== 'light')) {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          document.documentElement.classList.toggle('light', theme === 'light');
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sainath Patil",
+        "jobTitle": "Software Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "India"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "SJB Institute of Technology, Bengaluru"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/sainath-patil-015622305"
+        ]
+      }
+    </script>
+
+    <!-- Google Fonts for Editorial + Monospace typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
